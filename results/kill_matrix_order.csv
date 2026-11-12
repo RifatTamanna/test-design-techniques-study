@@ -1,0 +1,11 @@
+mutant,description,Valid transitions only,Invalid transitions only,All state/event pairs
+O01,cancel allowed from SHIPPED,SURVIVED,killed,killed
+O02,ship allowed from NEW (skips payment),SURVIVED,killed,killed
+O03,pay allowed twice,SURVIVED,killed,killed
+O04,deliver allowed from PAID (skips shipping),SURVIVED,killed,killed
+O05,cancel NOT allowed from PAID (valid transition missing),killed,SURVIVED,killed
+O06,cancel allowed from DELIVERED,SURVIVED,killed,killed
+O07,pay leads to SHIPPED instead of PAID,killed,killed,killed
+O08,ship allowed from CANCELLED,SURVIVED,killed,killed
+O09,pay allowed from CANCELLED,SURVIVED,killed,killed
+O10,cancel allowed from CANCELLED,SURVIVED,killed,killed

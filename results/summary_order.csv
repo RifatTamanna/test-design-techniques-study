@@ -1,0 +1,4 @@
+suite,tests,killed,mutants,score_%,random_same_size_mean_%,random_sd_%,random_>=_suite_%,survivors
+Valid transitions only,5,2,10,20.0,30.2,9.8,94.7,O01 O02 O03 O04 O06 O08 O09 O10
+Invalid transitions only,15,9,10,90.0,58.1,13.0,1.4,O05
+All state/event pairs,20,10,10,100.0,68.6,12.5,1.0,-

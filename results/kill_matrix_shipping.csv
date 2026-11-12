@@ -1,0 +1,15 @@
+mutant,description,Equivalence partitioning,Boundary value analysis,Decision table,Full combination,EP + BVA + decision table
+S01,weight 0 is accepted (should be rejected),SURVIVED,killed,SURVIVED,SURVIVED,killed
+S02,weight 50 is rejected (should be accepted),SURVIVED,killed,SURVIVED,SURVIVED,killed
+S03,weight 1 is charged as band 2,SURVIVED,killed,SURVIVED,SURVIVED,killed
+S04,weight 5 is charged as band 3,SURVIVED,killed,SURVIVED,SURVIVED,killed
+S05,weight 20 is charged as band 4,SURVIVED,killed,SURVIVED,SURVIVED,killed
+S06,band 3 base fee is 16 instead of 15,killed,killed,SURVIVED,killed,killed
+S07,distance 50 is charged as regional,SURVIVED,killed,SURVIVED,SURVIVED,killed
+S08,distance 500 is charged as national,SURVIVED,killed,SURVIVED,SURVIVED,killed
+S09,national surcharge is 9 instead of 10,killed,killed,killed,killed,killed
+S10,member discount is 15% instead of 10%,killed,SURVIVED,killed,killed,killed
+S11,member discount applied to base fee only,SURVIVED,SURVIVED,killed,killed,killed
+S12,negative distance is accepted,killed,killed,killed,SURVIVED,killed
+S13,members get no discount in the national zone,SURVIVED,SURVIVED,killed,killed,killed
+S14,members get no discount in the heaviest band,SURVIVED,SURVIVED,SURVIVED,killed,SURVIVED
